@@ -1,3 +1,8 @@
+//No inicio temos que utilizar os seguintes comandos:
+// npm init -y
+//npm install express
+//npm i -D nodemon 
+
 const express = require('express'); //importa express
 const app = express(); // informa que neste app vamos utilizar o express
 
@@ -27,3 +32,5 @@ app.get('/games/:id', (req,res) => { //crio a rota games + o id que será escoli
 app.listen(port, () => {
     console.info(`Nosso app esta rodando em: http://localhost:${port}/`); //crio uma mensagem no console para confirmar que meu app esta rodando.
 });
+
+//Roda com nodemon index.js
